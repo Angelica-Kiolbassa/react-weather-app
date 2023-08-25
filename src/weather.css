@@ -1,7 +1,14 @@
-.Weather-app {
+.Weather {
   border: 1px solid black;
+  width: 35%;
+  margin: 0 auto;
 }
 
 ul {
   list-style-type: none;
+  text-align: left;
+}
+
+.list-2 {
+  text-align: center;
 }
