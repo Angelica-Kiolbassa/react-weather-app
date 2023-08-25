@@ -1,15 +1,15 @@
 import "./App.css";
 import Weather from "./weather";
+import "./weather.css";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Weather App</h1>
         <Weather />
       </header>
 
-      <footer>
+      <footer classname="App-footer">
         <span>This app was coded by </span>
         <a href="https://www.instagram.com/creating_angelica/" target="_blank">
           Angelica Kiolbassa
