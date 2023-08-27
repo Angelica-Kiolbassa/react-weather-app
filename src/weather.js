@@ -2,6 +2,9 @@ import React from "react";
 import "./weather.css";
 
 export default function Weather() {
+  const apiKey = d8o5aa0df3a2c34948fdac8abdta545d;
+  let apiUrl =
+    "https://api.shecodes.io/weather/v1/current?query={query}&key={key}";
   return (
     <div class="Weather">
       <form>
