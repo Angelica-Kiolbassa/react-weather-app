@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import axios from "axios";
+import FormattedDate from "./FormattedDate";
 import "./weather.css";
 
-export default function Weather() {
+export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
   function handleResponse(response) {
     console.log(response.data);
@@ -16,7 +17,7 @@ export default function Weather() {
       iconUrl:
         "http://shecodes-assets.s3.amazonaws.com/api/weather/icons/few-clouds-day.png",
       icon: response.data.condition.icon,
-      time: response.data.time,
+      time: new Date(response.data.time * 1000),
       city: response.data.city,
     });
   }
@@ -44,7 +45,9 @@ export default function Weather() {
         </form>
         <h1 className="city mb-0">{weatherData.city}</h1>
         <div className="time">
-          <strong>{weatherData.time}</strong>
+          <strong>
+            <FormattedDate date={weatherData.time} />
+          </strong>
         </div>
         <div className="temp">
           {Math.round(weatherData.temperature)}°
@@ -65,9 +68,7 @@ export default function Weather() {
           <span className="details">{Math.round(weatherData.humidity)}%</span>
           <div>
             Wind:{" "}
-            <span className="details">
-              {Math.round(weatherData.wind)} km/h%
-            </span>
+            <span className="details">{Math.round(weatherData.wind)} km/h</span>
           </div>
         </span>
 
@@ -99,8 +100,7 @@ export default function Weather() {
     );
   } else {
     const apiKey = "d8o5aa0df3a2c34948fdac8abdta545d";
-    let city = "San Antonio";
-    let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
+    let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${props.defaultcity}&key=${apiKey}&units=metric`;
     axios.get(apiUrl).then(handleResponse);
 
     return "Loading... ";
