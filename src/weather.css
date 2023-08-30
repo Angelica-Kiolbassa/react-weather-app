@@ -1,3 +1,12 @@
+body .Weather {
+  background: #118a7e;
+  border-radius: 10px;
+  margin: 0 auto;
+  padding: 5px;
+  width: 400px;
+  height: 775px;
+}
+
 a:visited {
   color: #000000;
 }
@@ -69,14 +78,6 @@ ul {
 
 .units:hover {
   cursor: pointer;
-}
-
-.Weather {
-  border-radius: 10px;
-  width: 50%;
-  margin: 0 auto;
-  padding: 5px;
-  background: #118a7e;
 }
 
 /* .weather-forecast-temperatures {

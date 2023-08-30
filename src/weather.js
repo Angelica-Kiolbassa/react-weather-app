@@ -4,6 +4,7 @@ import WeatherInfo from "./Weatherinfo";
 import Music from "./music";
 import Forecast from "./forecast";
 import "./weather.css";
+import LightDark from "./lightDark";
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
@@ -38,10 +39,10 @@ export default function Weather(props) {
 
   if (weatherData.ready) {
     return (
-      <div class="Weather">
+      <div className="Weather">
         <form onSubmit={handleSubmit}>
           <div className="row">
-            <div className="col-6 mb-2 ms-5 mt-0 d-flex">
+            <div className="col-6 mb-2 ms-5 me-0mt-0">
               <input
                 type="search"
                 placeholder="Enter a city..."
@@ -50,15 +51,16 @@ export default function Weather(props) {
                 onChange={handleCityChange}
               />
             </div>
-            <div className="col-3 ms-0 mt-0 mb-2 d-flex">
+            <div className="col-1 ms-0 mt-0 mb-2 ">
               <input
                 type="submit"
                 value="search"
-                className="btn btn-dark ps-2 ms-0"
+                className="btn btn-dark p-01ms-0"
               />
             </div>
           </div>
         </form>
+
         <WeatherInfo data={weatherData} />
 
         <Music />
@@ -68,6 +70,6 @@ export default function Weather(props) {
     );
   } else {
     Search();
-    return "Loading... ";
+    return;
   }
 }

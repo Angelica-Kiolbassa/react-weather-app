@@ -1,14 +1,13 @@
 import "./App.css";
 import Weather from "./weather";
 import "./weather.css";
+import LightDark from "./lightDark";
 
 function App() {
   return (
     <div className="App">
-      <header className="header">
-        <Weather defaultCity="San Antonio" />
-      </header>
-
+      <LightDark />
+      <Weather defaultCity="San Antonio" />
       <footer className="footer">
         <span>This app was coded by </span>
         <a

@@ -1,5 +1,21 @@
 body {
   text-align: center;
   font-family: "Lora", serif;
-  background: #000000;
+  background-color: #000000;
 }
+
+#light {
+  color: #fff;
+}
+
+#dark {
+  color: #fff;
+}
+
+/* #light {
+  background: #4bffd5;
+}
+
+#dark {
+  background: #118a7e;
+} */
