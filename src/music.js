@@ -18,8 +18,7 @@ export default function Music() {
           id="playlist"
           src="https://open.spotify.com/embed/playlist/2IjwcPA9f07TeYSLijgNq6?utm_source=generator&theme=0"
           width="70%"
-          height="100"
-          frameborder="0"
+          height="85"
           allow="autoplay"
           loading="lazy"
         ></iframe>

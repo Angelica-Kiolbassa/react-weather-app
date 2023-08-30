@@ -12,6 +12,7 @@ export default function Weather(props) {
   function handleResponse(response) {
     setWeatherData({
       ready: true,
+      coordinates: response.data.coordinates,
       temperature: response.data.temperature.current,
       wind: response.data.wind.speed,
       humidity: response.data.temperature.humidity,
@@ -65,7 +66,26 @@ export default function Weather(props) {
 
         <Music />
 
-        <Forecast />
+        <Forecast coordinates={weatherData.coordinates} />
+
+        <footer className="footer mt-1">
+          <span>This app was coded by </span>
+          <a
+            href="https://www.instagram.com/creating_angelica/"
+            target="_blank"
+            className="links"
+          >
+            Angelica Kiolbassa
+          </a>
+          <span> and open-sourced on </span>
+          <a
+            href="https://github.com/Angelica-Kiolbassa/react-weather-app.git"
+            target="_blank"
+            className="links"
+          >
+            Github
+          </a>
+        </footer>
       </div>
     );
   } else {

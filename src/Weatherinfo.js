@@ -5,7 +5,7 @@ import WeatherTemperature from "./WeatherTemperature";
 export default function WeatherInfo(props) {
   return (
     <div className="WeatherInfo">
-      <h1 className="city mb-0">{props.data.city}</h1>
+      <h1 className="city mb-0 mt-0">{props.data.city}</h1>
       <div className="time">
         <strong>
           <FormattedDate date={props.data.date} />

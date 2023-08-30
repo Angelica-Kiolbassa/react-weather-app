@@ -4,7 +4,7 @@ body .Weather {
   margin: 0 auto;
   padding: 5px;
   width: 400px;
-  height: 775px;
+  height: 815px;
 }
 
 a:visited {
@@ -36,6 +36,11 @@ ul {
 
 .forecast {
   font-size: 20px;
+}
+
+.footer {
+  font-size: 12px;
+  color: #fff;
 }
 
 .form-control {
@@ -79,36 +84,3 @@ ul {
 .units:hover {
   cursor: pointer;
 }
-
-/* .weather-forecast-temperatures {
-  margin: 0 auto;
-  color: #2a2929;
-  font-size: 12px;
-}
-
-.weather-forecast-temperature-max {
-  font-weight: bold;
-  color: #93e4c1;
-  font-size: 14px;
-  margin-right: 5px;
-}
-
-
-#col {
-  color: rgb(247, 242, 195);
-  font-size: 14px;
-  margin: 0, auto;
-  margin-left: 20px;
-  margin-top: 150px;
-  margin-bottom: 15px;
-  border: none;
-  box-shadow: 0px 5px 5px 0px rgb(247, 242, 195);
-  border-radius: 20px;
-}
-
-.col:hover {
-  cursor: pointer;
-  transform: translateY(-5px);
-  box-shadow: 0px 5px 8px 2px rgb(247, 242, 195);
-  transition: all 200ms ease-in-out;
-} */
