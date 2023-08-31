@@ -1,14 +1,14 @@
 body .Weather {
-  background: #118a7e;
+  background: #d2a0fe;
   border-radius: 10px;
   margin: 0 auto;
   padding: 5px;
-  width: 400px;
-  height: 815px;
+  width: 600px;
+  height: 700px;
 }
 
 a:visited {
-  color: #000000;
+  color: #6a3392;
 }
 
 ul {
@@ -16,8 +16,8 @@ ul {
 }
 
 .btn-dark {
-  background: #93e4c1 !important;
-  color: #000000 !important;
+  background: #000000 !important;
+  color: #ff4ed0 !important;
   border: none !important;
 }
 
@@ -28,10 +28,11 @@ ul {
 .city {
   font-size: 40px;
   font-weight: bold;
+  color: #000000;
 }
 
 .details {
-  color: rgb(247, 242, 195);
+  color: #9ef2f8;
 }
 
 .forecast {
@@ -39,6 +40,7 @@ ul {
 }
 
 .footer {
+  text-align: center;
   font-size: 12px;
   color: #fff;
 }
@@ -50,12 +52,19 @@ ul {
   margin: auto 0;
 }
 
-.subtext2 {
-  margin: 0 auto;
-  margin-top: 20px;
-  margin-bottom: 10px;
-  background: rgb(247, 242, 195);
+.forecast-day {
   color: #000000;
+}
+
+.music {
+  margin-left: auto;
+}
+
+.subtext2 {
+  text-align: center;
+  margin-left: 40px;
+  background: #6a3392;
+  color: #ff4ed0;
   border: solid, transparent;
   border-radius: 20px;
   font-size: 16px;
@@ -65,22 +74,26 @@ ul {
 }
 
 .temp {
-  color: #93e4c1;
+  color: #ff4ed0;
   text-align: center;
   font-size: 45px;
   font-weight: bold;
 }
 
 .time {
-  color: rgb(247, 242, 195);
+  color: #9ef2f8;
 }
 
 .units {
   font-size: 18px;
-  color: #000000;
+  color: #6a3392;
   font-weight: 100;
 }
 
 .units:hover {
   cursor: pointer;
+}
+
+.weather-info-center {
+  text-align: center;
 }

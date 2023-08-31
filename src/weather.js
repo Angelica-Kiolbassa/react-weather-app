@@ -39,10 +39,10 @@ export default function Weather(props) {
 
   if (weatherData.ready) {
     return (
-      <div className="Weather">
+      <div className="Weather ps-5">
         <form onSubmit={handleSubmit}>
           <div className="row">
-            <div className="col-6 mb-2 ms-5 me-0mt-0">
+            <div className="col-6 mb-2 ms-5 me-0 mt-0 ps-5">
               <input
                 type="search"
                 placeholder="Enter a city..."
@@ -65,26 +65,9 @@ export default function Weather(props) {
 
         <Music />
 
-        <Forecast coordinates={weatherData.coordinates} />
-
-        <footer className="footer mt-1">
-          <span>This app was coded by </span>
-          <a
-            href="https://www.instagram.com/creating_angelica/"
-            target="_blank"
-            className="links"
-          >
-            Angelica Kiolbassa
-          </a>
-          <span> and open-sourced on </span>
-          <a
-            href="https://github.com/Angelica-Kiolbassa/react-weather-app.git"
-            target="_blank"
-            className="links"
-          >
-            Github
-          </a>
-        </footer>
+        <div className="forecast-section">
+          <Forecast coordinates={weatherData.coordinates} />
+        </div>
       </div>
     );
   } else {

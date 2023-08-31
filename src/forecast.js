@@ -15,9 +15,11 @@ export default function Forecast(props) {
   if (loaded) {
     return (
       <div className="forecast">
-        <div className="row">
-          <div className="col">
-            <WeatherForecastDay data={forecast} />
+        <div className="container-fluid">
+          <div className="row">
+            <div className="col-sm-4">
+              <WeatherForecastDay data={forecast} />
+            </div>
           </div>
         </div>
       </div>

@@ -1,18 +1,10 @@
 .forecast {
   text-align: center;
-  color: rgb(247, 242, 195);
+  color: #000000;
   font-size: 14px;
-  margin: 0, auto;
   border: none;
-  box-shadow: 0px 5px 5px 0px rgb(247, 242, 195);
+  box-shadow: 0px 5px 5px 0px;
   border-radius: 20px;
-}
-
-.forecast:hover {
-  cursor: pointer;
-  transform: translateY(-5px);
-  box-shadow: 0px 5px 8px 2px rgb(247, 242, 195);
-  transition: all 200ms ease-in-out;
 }
 
 .forecast-day {
@@ -23,10 +15,10 @@
 .forecast-temp-max {
   font-size: 14px;
   font-weight: bold;
-  color: #93e4c1;
+  color: #ff4ed0;
 }
 
 .forecast-temp-min {
   font-size: 14px;
-  color: #2a2929;
+  color: #9ef2f8;
 }
