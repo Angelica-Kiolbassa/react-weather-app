@@ -4,7 +4,6 @@ import WeatherInfo from "./Weatherinfo";
 import Music from "./music";
 import Forecast from "./forecast";
 import "./weather.css";
-import LightDark from "./lightDark";
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
