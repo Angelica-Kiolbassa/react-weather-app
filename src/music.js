@@ -18,10 +18,11 @@ export default function Music() {
         <div>
           <iframe
             id="playlist"
-            src="https://open.spotify.com/embed/playlist/2IjwcPA9f07TeYSLijgNq6?utm_source=generator&theme=0"
-            width="40%"
-            height="85"
+            src="https://open.spotify.com/embed/playlist/73UcqNEPBpeoW3JPnmU7cm?utm_source=generator&theme=0"
+            width="70%"
+            height="80"
             allow="autoplay"
+            autoplay="play"
             loading="lazy"
           ></iframe>
         </div>
