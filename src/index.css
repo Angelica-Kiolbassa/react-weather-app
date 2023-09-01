@@ -1,20 +1,6 @@
 body {
+  text-align: center;
   font-family: "Lora", serif;
-  background-color: #000000;
+  background-color: #9bf6ff;
+  margin: 0 auto;
 }
-
-#light {
-  color: #fff;
-}
-
-#dark {
-  color: #fff;
-}
-
-/* #light {
-  background: #71beac;
-}
-
-#dark {
-  background: #118a7e;
-} */

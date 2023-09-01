@@ -7,15 +7,38 @@ function App() {
   return (
     <div className="App">
       <img
-        src="https://images-prod.dazeddigital.com/1431/azure/dazed-prod/1210/6/1216646.jpg"
+        src={require("./images/btsSummer.png")}
         width="600"
         height="300"
         className="img-fluid rounded mx-auto d-block"
         alt="Responsive image"
       />
+
       <Weather defaultCity="San Antonio" />
 
-      <footer className="footer mt-1">
+      <div className="container mt-0">
+        <span className="logo">
+          <img
+            src={require("./images/bts.png")}
+            width="100"
+            height="200"
+            className="img-fluid rounded inline-block"
+            alt="Responsive image"
+          />
+        </span>
+
+        <span className="logo">
+          <img
+            src={require("./images/army.png")}
+            width="100"
+            height="200"
+            className="img-fluid rounded inline-block mt-4"
+            alt="Responsive image"
+          />
+        </span>
+      </div>
+
+      <footer className="footer">
         <span>This app was coded by </span>
         <a
           href="https://www.instagram.com/creating_angelica/"

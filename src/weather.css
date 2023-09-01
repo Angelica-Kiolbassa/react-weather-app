@@ -3,6 +3,7 @@ body .Weather {
   border-radius: 10px;
   margin: 0 auto;
   padding: 5px;
+  max-width: 50%;
 }
 
 a:visited {
@@ -17,10 +18,16 @@ ul {
   background: #000000 !important;
   color: #ff4ed0 !important;
   border: none !important;
+  margin: 0 auto;
+  padding: 5px;
 }
 
 .btn-dark:hover {
   cursor: pointer;
+}
+
+.search-bar {
+  margin: 0 auto;
 }
 
 .city {
@@ -39,36 +46,20 @@ ul {
 }
 
 .footer {
+  margin-top: -20px;
   text-align: center;
-  font-size: 12px;
-  color: #fff;
+  font-size: 16px;
+  color: #000;
 }
 
 .form-control {
   border: none !important;
   box-shadow: none !important;
-  margin: inline-block;
-  margin: auto 0;
+  justify-content: center;
 }
 
 .forecast-day {
   color: #000000;
-}
-
-.music {
-  margin-left: auto;
-}
-
-.subtext2 {
-  text-align: center;
-  background: #6a3392;
-  color: #ff4ed0;
-  border: solid, transparent;
-  border-radius: 20px;
-  font-size: 16px;
-  font-style: italic;
-  font-weight: bold;
-  width: 25%;
 }
 
 .temp {

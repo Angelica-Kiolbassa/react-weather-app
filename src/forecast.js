@@ -8,13 +8,13 @@ export default function WeatherForecast(props) {
   let [forecast, setForecast] = useState(null);
 
   function handleResponse(response) {
-    setForecast(response.data.daily[0]);
+    setForecast(response.data.daily);
     setLoaded(true);
   }
 
   if (loaded) {
     return (
-      <div className="WeatherForecast">
+      <div className="forecast">
         <div className="row">
           {forecast.map(function (dailyForecast, index) {
             if (index < 7) {
