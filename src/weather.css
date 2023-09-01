@@ -3,8 +3,6 @@ body .Weather {
   border-radius: 10px;
   margin: 0 auto;
   padding: 5px;
-  width: 600px;
-  height: 700px;
 }
 
 a:visited {
@@ -37,6 +35,7 @@ ul {
 
 .forecast {
   font-size: 20px;
+  text-align: center;
 }
 
 .footer {
@@ -62,7 +61,6 @@ ul {
 
 .subtext2 {
   text-align: center;
-  margin-left: 40px;
   background: #6a3392;
   color: #ff4ed0;
   border: solid, transparent;

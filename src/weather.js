@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import WeatherInfo from "./Weatherinfo";
 import Music from "./music";
-import Forecast from "./forecast";
+import WeatherForecast from "./forecast";
 import "./weather.css";
 
 export default function Weather(props) {
@@ -66,7 +66,7 @@ export default function Weather(props) {
         <Music />
 
         <div className="forecast-section">
-          <Forecast coordinates={weatherData.coordinates} />
+          <WeatherForecast coordinates={weatherData.coordinates} />
         </div>
       </div>
     );

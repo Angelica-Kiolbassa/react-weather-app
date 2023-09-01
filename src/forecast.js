@@ -3,7 +3,7 @@ import "./forecast.css";
 import axios from "axios";
 import WeatherForecastDay from "./WeatherForecastDay";
 
-export default function Forecast(props) {
+export default function WeatherForecast(props) {
   let [loaded, setLoaded] = useState(false);
   let [forecast, setForecast] = useState(null);
 
@@ -14,13 +14,17 @@ export default function Forecast(props) {
 
   if (loaded) {
     return (
-      <div className="forecast">
-        <div className="container-fluid">
-          <div className="row">
-            <div className="col-sm-4">
-              <WeatherForecastDay data={forecast} />
-            </div>
-          </div>
+      <div className="WeatherForecast">
+        <div className="row">
+          {forecast.map(function (dailyForecast, index) {
+            if (index < 7) {
+              return (
+                <div className="col" key={index}>
+                  <WeatherForecastDay data={dailyForecast} />
+                </div>
+              );
+            }
+          })}
         </div>
       </div>
     );
