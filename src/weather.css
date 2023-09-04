@@ -3,7 +3,7 @@ body .Weather {
   border-radius: 10px;
   margin: 0 auto;
   padding: 5px;
-  max-width: 60%;
+  max-width: fit-content;
 }
 
 a:visited {
