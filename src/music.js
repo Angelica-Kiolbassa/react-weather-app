@@ -19,7 +19,7 @@ export default function Music() {
           <iframe
             id="playlist"
             src="https://open.spotify.com/embed/playlist/73UcqNEPBpeoW3JPnmU7cm?utm_source=generator&theme=0"
-            width="65%"
+            max-width="70"
             height="80"
             allow="autoplay"
             autoplay="play"
