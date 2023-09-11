@@ -15,11 +15,11 @@ export default function Music() {
             ></img>
           </div>
         </div>
-        <div className="container d-flex justify-content-center">
+        <div className="container d-flex justify-content-center mb-2">
           <iframe
             id="playlist"
             src="https://open.spotify.com/embed/playlist/73UcqNEPBpeoW3JPnmU7cm?utm_source=generator&theme=0"
-            max-width="70"
+            max-width="60"
             height="80"
             allow="autoplay"
             autoplay="play"
