@@ -4,7 +4,7 @@
   box-shadow: 0px 5px 5px 0px;
   border-radius: 20px;
   margin: 0 auto;
-  width: 70%;
+  max-width: fit-content;
 }
 
 .forecast:hover {
