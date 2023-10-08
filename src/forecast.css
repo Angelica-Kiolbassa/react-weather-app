@@ -5,6 +5,7 @@
   border-radius: 20px;
   margin: 0 auto;
   max-width: fit-content;
+  background: #91606f;
 }
 
 .forecast:hover {
@@ -22,10 +23,10 @@
 .forecast-temp-max {
   font-size: 14px;
   font-weight: bold;
-  color: #ff4ed0;
+  color: #fff5d1;
 }
 
 .forecast-temp-min {
   font-size: 14px;
-  color: #9ef2f8;
+  color: #fdc500;
 }

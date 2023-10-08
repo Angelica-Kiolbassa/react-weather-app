@@ -1,5 +1,5 @@
 body .Weather {
-  background: #d2a0fe;
+  background: #fff5d1;
   border-radius: 10px;
   margin: 0 auto;
   padding: 5px;
@@ -7,7 +7,7 @@ body .Weather {
 }
 
 a:visited {
-  color: #6a3392;
+  color: #0d0d34;
 }
 
 ul {
@@ -15,8 +15,8 @@ ul {
 }
 
 .btn-dark {
-  background: #000000 !important;
-  color: #ff4ed0 !important;
+  background: #91606f !important;
+  color: #0d0d34 !important;
   border: none !important;
   margin: 0 auto;
   padding: 5px;
@@ -33,11 +33,11 @@ ul {
 .city {
   font-size: 40px;
   font-weight: bold;
-  color: #000000;
+  color: #91606f;
 }
 
 .details {
-  color: #9ef2f8;
+  color: #b08a00;
 }
 
 .forecast {
@@ -63,19 +63,19 @@ ul {
 }
 
 .temp {
-  color: #ff4ed0;
+  color: #91606f;
   text-align: center;
   font-size: 50px;
   font-weight: bold;
 }
 
 .time {
-  color: #9ef2f8;
+  color: #0d0d34;
 }
 
 .units {
   font-size: 18px;
-  color: #6a3392;
+  color: #0d0d34;
   font-weight: 100;
 }
 

@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <img
-        src={require("./images/btsSummer.png")}
+        src={require("./images/BTSfall.png")}
         width="600"
         height="300"
         className="img-fluid rounded mx-auto d-block"
